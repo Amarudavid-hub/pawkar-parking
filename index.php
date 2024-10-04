@@ -32,9 +32,9 @@
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="" method="POST" class="formulario__login">
+                    <form action="php/login_usuario_be.php" method="POST" class="formulario__login">
                         <img src="IMG/inicio.png" class= "imf" alt="">
-                        <input type="text" placeholder="Usuario" name="nombre_completo">
+                        <input type="text" placeholder="Usuario" name="usuario">
                         <input type="password" placeholder="Contraseña" name="contraseña">
                         <button>Iniciar Sesión</button>
                     </form>
