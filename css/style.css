@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url("../IMG/logo-pawkar.jpg");
+    background-image: url("../IMG/PAWKARPARKINGfondo_Mesa\ de\ trabajo\ 1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -48,6 +48,7 @@ main{
 
 .caja__trasera div p,
 .caja__trasera button{
+ 
     margin-top: 30px;
 }
 
@@ -71,9 +72,11 @@ main{
     color: white;
     outline: none;
     transition: all 300ms;
+    
 }
 
 .caja__trasera button:hover{
+    
     background: #fff;
     color: #46A2FD;
 }
@@ -95,18 +98,21 @@ main{
 
 .contenedor__login-register form{
     width: 100%;
-    padding: 80px 20px;
-    background: white;
+    padding: 20px 10px;
+    background:white;
     position: absolute;
     border-radius: 20px;
 }
+.imf{
+    
+    width: 360px;
+    height: 150px;
+    
 
-.contenedor__login-register form h2{
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #6e2480;
+
 }
+
+
 
 .contenedor__login-register form input{
     width: 100%;
@@ -117,17 +123,39 @@ main{
     font-size: 16px;
     outline: none;
 }
+button {
+    display: block;
+    padding: 0.5rem 1rem;
+    width: 200px;
+    margin: 0 auto;
+   
+    
+}
+
+
+    
+
+
+
 
 .contenedor__login-register form button{
     padding: 10px 40px;
     margin-top: 40px;
     border: none;
-    font-size: 14px;
+    font-size: 15px;
     background: rgb(240, 144, 10);
     font-weight: 600;
     cursor: pointer;
     color: white;
     outline: none;
+      
+    
+}
+.contenedor__login-register button:hover{
+    background: rgb(64, 170, 54);
+    color: white;
+
+
 }
 
 

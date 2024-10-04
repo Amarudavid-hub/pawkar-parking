@@ -1,22 +1,13 @@
 <?php
+$conexion = mysqli_connect("localhost", "root", "", "rol");
 
-
-$server="localhost";
-$user="root";
-$pass="";
-$bd_1="test";
-
-$conexion=new mysqli($server,$user,password: $pass,$bd_1);
-if($conexion->connect_erno){
-    die("conexion faliida" . $conexion->connect_erno);
+   if($conexion){
+    echo'CONECTADO EXITOSAMENTE  LA BASE DE DATOS';
+    }else{
+        echo'NO SE PUEDE CONECTAR A LA BASE DE DATOS';
     
-}else{
-    echo"conectadoOOOOOOO";
-}
+   }
 
-
-
-
-
+   
 
 ?>
