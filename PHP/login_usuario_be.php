@@ -19,12 +19,12 @@ $resultado=mysqli_query($conexion,$consulta);
 $filas=mysqli_fetch_array($resultado);
 
 if($filas['id_cargo']==1){ //administrador
-    header("location:bienvenida.php");
+    header("location:Administrador.php");
     
 }else
 echo 'entrada';
 if($filas['id_cargo']==2){ //Pentrada
-header("location:Pentrada.php");
+header("location:ParkingEntrada.php");
 }
 else{
    ?>
