@@ -5,13 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./CSS/Administrador.css">
+         <link rel="stylesheet" href="./css/ingresar.css">
         <title>Parking Pawkar Admin</title>
     </head>
     <body>
         <header>
             <div class="left-header">
                 <div class="menuButton">
-                    <img src="./images/icons8-hamburger-menu-512.svg" alt="">
+                    <img src="./IMG/FLOR.png" alt="">
                     <div id="myLinks">
                         <a href="#news">INICIO</a>
                         <a href="#contact">TARIFAS</a>
@@ -33,8 +34,9 @@
             </div>
 
             <div class="right-header">
-                <h2>martes, 7 septiembre de 2024</h2>
-                <h2>03:05:49 PM</h2>
+                <h2 id="dateSection"></h2>
+                <h2 id="clockSection"></h2>
+
             </div>
 
         </header>
@@ -56,6 +58,6 @@
                 <button>INGRESAR</button>
             </form>
         </main>
-
+        <script src="./JS/juanReloj.js"></script>
     </body>
 </html>
