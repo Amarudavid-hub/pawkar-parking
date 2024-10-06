@@ -40,7 +40,15 @@ function showTime() {
         hr = 12;
         timePeriod = 'AM';
     }
-
+    if (hour <= 0) {
+        hour = '0' + hour;
+    }
+    if (minutos < 10) {
+        minutos = '0' + minutos;
+    }
+    if (segundos < 10) {
+        segundos = '0' + segundos;
+    }
     let currentClockText = ` ${hour} : ${minutos} : ${segundos} ${timePeriod}`;
 
     // console.log(currentClockText);
