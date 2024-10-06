@@ -1,3 +1,4 @@
+<!-- Juan Mysql: 12345 -->
 <?php
 $conexion = mysqli_connect("localhost", "root", "", "rol");
 
