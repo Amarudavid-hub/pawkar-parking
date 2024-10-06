@@ -1,3 +1,4 @@
+//Date
 let date = new Date();
 let dateNumber = date.getDate();
 let day =
@@ -16,9 +17,37 @@ let month =
 let year = date.getFullYear();
 console.log(year);
 
-let dateEl = document.createElement('h2');
-dateEl.textContent = `${day}, ${dateNumber} ${month} de ${year}`;
+let dateText = `${day}, ${dateNumber} ${month} de ${year}`;
 
 let dateSection = document.getElementById('dateSection');
 
-dateSection.appendChild(dateEl);
+dateSection.textContent = dateText;
+// Calling showTime function at every second
+setInterval(showTime, 1000);
+//Clock
+function showTime() {
+    let date = new Date();
+    let hour = date.getHours();
+    let minutos = date.getMinutes();
+    let segundos = date.getSeconds();
+    let timePeriod = 'AM';
+
+    // Setting time for 12 Hrs format
+    if (hour >= 12) {
+        if (hour > 12) hour -= 12;
+        timePeriod = 'PM';
+    } else if (hour == 0) {
+        hr = 12;
+        timePeriod = 'AM';
+    }
+
+    let currentClockText = ` ${hour} : ${minutos} : ${segundos} ${timePeriod}`;
+
+    // console.log(currentClockText);
+
+    let timeSection = document.getElementById('clockSection');
+
+    timeSection.textContent = currentClockText;
+}
+
+showTime();
