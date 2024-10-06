@@ -50,14 +50,15 @@
                 </div>
 
                 <h3>HORA</h3>
-                <h1>03:05:49 PM</h1>
+                <h1 id="inngresarCaroHora">03:05:49 PM</h1>
 
                 <h3>FECHA</h3>
-                <h1 class="form-day">martes, 7 septiembre de 2024</h1>
+                <h1 class="form-day" id="ingresarCaroDia">martes, 7 septiembre de 2024</h1>
 
                 <button>INGRESAR</button>
             </form>
         </main>
         <script src="./JS/juanReloj.js"></script>
+        <script src="./JS/juanIngresoDeCaro.js"></script>
     </body>
 </html>
