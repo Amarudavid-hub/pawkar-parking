@@ -15,13 +15,13 @@ let month =
         .toLocaleUpperCase() +
     date.toLocaleDateString('es-US', {month: 'long'}).slice(1);
 let year = date.getFullYear();
-console.log(year);
 
 let dateText = `${day}, ${dateNumber} ${month} de ${year}`;
 
 let dateSection = document.getElementById('dateSection');
 
 dateSection.textContent = dateText;
+
 // Calling showTime function at every second
 setInterval(showTime, 1000);
 //Clock
@@ -40,7 +40,7 @@ function showTime() {
         hr = 12;
         timePeriod = 'AM';
     }
-    if (hour <= 0) {
+    if (hour == 0) {
         hour = '0' + hour;
     }
     if (minutos < 10) {
