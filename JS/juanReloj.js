@@ -27,29 +27,27 @@ setInterval(showTime, 1000);
 //Clock
 function showTime() {
     let date = new Date();
-    let hour = date.getHours();
+    let hora = date.getHours();
     let minutos = date.getMinutes();
     let segundos = date.getSeconds();
     let timePeriod = 'AM';
 
     // Setting time for 12 Hrs format
-    if (hour >= 12) {
-        if (hour > 12) hour -= 12;
+    if (hora >= 12) {
+        if (hora > 12) hora -= 12;
         timePeriod = 'PM';
-    } else if (hour == 0) {
-        hr = 12;
+    } else if (hora == 0) {
+        hora = '0' + hora;
         timePeriod = 'AM';
     }
-    if (hour == 0) {
-        hour = '0' + hour;
-    }
+
     if (minutos < 10) {
         minutos = '0' + minutos;
     }
     if (segundos < 10) {
         segundos = '0' + segundos;
     }
-    let currentClockText = ` ${hour} : ${minutos} : ${segundos} ${timePeriod}`;
+    let currentClockText = ` ${hora} : ${minutos} : ${segundos} ${timePeriod}`;
 
     // console.log(currentClockText);
 
