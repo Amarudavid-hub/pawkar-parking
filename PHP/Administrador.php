@@ -3,16 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./CSS/Administrador.css">
-         <link rel="stylesheet" href="./css/ingresar.css">
+        
+        <link rel="stylesheet" href="../css/Administrador.css">
+        
         <title>Parking Pawkar Admin</title>
+        <link rel="icon" href="../IMG/FLOR.PNG">
+        
     </head>
     <body>
         <header>
             <div class="left-header">
                 <div class="menuButton">
-                    <img src="./IMG/FLOR.png" alt="">
+                    <img src="../IMG/logo_parking.png" alt="">
                     <div id="myLinks">
                         <a href="#news">INICIO</a>
                         <a href="#contact">TARIFAS</a>
@@ -28,7 +30,7 @@
                 </div>
                 <div class="enlinea">
                     <h1>EN LINEA :</h1>
-                    <img class="icon" src="./images/yellow_icon.jpg" alt="icon-picture" />
+                    <img class="icon" src="../IMG/logo_parking.png" alt="icon-picture" />
                     <h1 class="employee-position">ADMIN</h1>
                 </div>
             </div>
@@ -48,17 +50,19 @@
                     <label for="classe_de_vehiculo">SELECIONE CLASSE DE VEHICULO</label>
                     <input type="text" id="classe_de_vehiculo" name="classe_de_vehiculo">
                 </div>
-
+                
                 <h3>HORA</h3>
                 <h1 id="inngresarCaroHora">03:05:49 PM</h1>
 
                 <h3>FECHA</h3>
                 <h1 class="form-day" id="ingresarCaroDia">martes, 7 septiembre de 2024</h1>
 
+
+                
                 <button>INGRESAR</button>
             </form>
         </main>
-        <script src="./JS/juanReloj.js"></script>
-        <script src="./JS/juanIngresoDeCaro.js"></script>
+        <script src="../JS/juanReloj.js"></script>
+        <script src="../JS/juanIngresoDeCaro.js"></script>
     </body>
 </html>

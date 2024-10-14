@@ -1,6 +1,10 @@
-body {
-    background-color: #145da0;
-    margin: 0;
+
+body{
+    background-image: url("../IMG/Pentrada.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
@@ -42,6 +46,8 @@ header {
     margin-left: 10px;
 }
 h1 {
+    height:115px;
+    width: 110px;
     font-weight: lighter;
     color: #89cff0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

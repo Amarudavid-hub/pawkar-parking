@@ -1,7 +1,7 @@
 main {
     display: flex;
     justify-content: center;
-    margin: 10%;
+    margin: 2%;
 }
 .ingresarForm {
     display: flex;
@@ -10,12 +10,12 @@ main {
 }
 .ingresarForm .form-day {
     margin: 0;
-    font-size: 70px;
+    font-size: 35px ;
 }
 .ingresarForm h1 {
     color: white;
     margin: 0;
-    font-size: 100px;
+    font-size: 35px;
     font-weight: bolder;
 }
 .ingresarForm h3 {
@@ -30,8 +30,8 @@ label {
         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #placa {
-    width: 800px;
-    height: 200px;
+    width: 500px;
+     height: 95px;
     border-radius: 25px;
     margin-top: 5px;
 }
@@ -42,14 +42,14 @@ label {
     margin-top: 10px;
 }
 #classe_de_vehiculo {
-    width: 400px;
+    width: 255px;
     height: 50px;
     border-radius: 10px;
 }
 button {
-    width: 300px;
+    width: 200px;
     height: 75px;
-    margin: 25px auto;
+    margin: 5px auto;
     color: white;
     background-color: aqua;
     font-size: 25px;
