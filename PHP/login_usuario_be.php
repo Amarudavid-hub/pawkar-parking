@@ -1,9 +1,9 @@
 <?php
-include'conexion_be.php';
+// include'conexion_be.php';
 
 $usuario=$_POST['usuario'];
 $contraseña=$_POST['contraseña'];
-session_start();
+// session_start();
 
 echo $usuario;
 echo $contraseña;
@@ -13,12 +13,13 @@ $_SESSION['usuario']=$usuario;
 
 $conexion=mysqli_connect("localhost","root","","rol");
 
-$consulta="SELECT*FROM usuarios where usuario='$usuario' and contrasena='$contraseña'";
+$consulta="SELECT*FROM usuario where usuario='$usuario' and contrasena='$contraseña'";
 $resultado=mysqli_query($conexion,$consulta);
 
 $filas=mysqli_fetch_array($resultado);
 
 if($filas['id_cargo']==1){ //administrador
+
     header("location:Administrador.php");
     
 }else

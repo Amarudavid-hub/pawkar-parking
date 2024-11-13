@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" href="../css/Administrador.css">
+                <link rel="stylesheet" href="../css/ingreso_auto.css">
+        <link rel="stylesheet" href="../css/principal.css">
         
         <title>Parking Pawkar Admin</title>
         <link rel="icon" href="../IMG/FLOR.PNG">
